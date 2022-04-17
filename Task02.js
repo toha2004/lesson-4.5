@@ -1,7 +1,16 @@
 "use strict";
 
-
-for (let i = 1; i < 10; i++) {
-        if (i % 1 && i % i && i < 0) continue;
-        console.log(i)
+let num = prompt ("Введите число");
+let flag = true;
+function isPrime (){
+for (let i = 2; i < num; i++) {
+    if (num % i === 0) {
+        flag = false;
+        break;
     }
+}
+}
+console.log(flag);
+
+
+
